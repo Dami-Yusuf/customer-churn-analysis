@@ -1,67 +1,139 @@
 # Customer Churn Analysis
 
-## Overview
+## 📌 Project Overview
 
-This project analyzes customer churn for a telecommunications company using a sample customer dataset.
+This project analyzes customer churn for a telecommunications company using customer-level subscription and service data.
 
-The objective was to identify the key factors associated with customer churn, perform exploratory analysis, and provide actionable recommendations for reducing churn.
+The objective of the analysis was to identify the key factors associated with customer churn, perform exploratory analysis across relevant customer segments, and provide actionable recommendations for reducing churn.
 
-## Dataset
+---
 
-The dataset contains customer-level information including:
+## 🎯 Business Questions
 
-* Customer ID
+The analysis was designed to answer the following questions:
+
+1. What are the top two factors contributing to customer churn?
+2. What patterns can be identified through exploratory analysis?
+3. What actions can be taken to reduce customer churn?
+4. What methodology was used to arrive at the findings?
+
+---
+
+## 📊 Dataset
+
+The dataset contains the following customer attributes:
+
+* **Customer ID**
+* **Subscription Type** — Monthly, Quarterly, Yearly
+* **Tenure (Months)**
+* **Monthly Charges**
+* **Total Complaints in the Last 3 Months**
+* **Was Retention Offer Given** — Yes / No
+* **Churn** — Yes / No
+
+---
+
+## 🔍 Exploratory Analysis
+
+Churn rates were analyzed across the following dimensions:
+
 * Subscription Type
-* Tenure
-* Monthly Charges
-* Total Complaints in the Last 3 Months
+* Tenure Group
+* Complaint Count
+* Monthly Charge Band
 * Retention Offer Status
-* Churn Status
 
-## Analysis Performed
+The analysis compares churn rates across customer segments against the overall churn rate.
 
-The analysis examined churn rates across:
+---
 
-* Subscription type
-* Customer tenure groups
-* Complaint count
-* Monthly charge bands
-* Retention offer status
+## 📈 Key Findings
 
-Churn rates were calculated for each segment and compared with the overall churn rate.
+### Overall Churn
 
-## Key Findings
+The sample has an overall observed churn rate of **50%**, with **5 out of 10 customers** having churned.
 
-* The overall observed churn rate in the sample was **50%**.
 * Customers with **7–12 months of tenure** recorded a **100% observed churn rate**.
 * **Quarterly subscribers** recorded a **100% observed churn rate**.
 * Customers who received a retention offer recorded **0% observed churn**, compared with **71.4%** among customers who did not receive an offer.
 * Churn Rate by **SubscriptionType and TenureGroup** are the top 2 factors contributing to customer churn.
 * Complaint count and monthly charges did not show a consistent relationship with churn in this sample.
 
-## Recommendations
+---
+## 💡 Recommendations
 
-### 1. Strengthen early-tenure retention
+### 1. Strengthen Early-Tenure Retention
 
-Prioritize proactive engagement and retention interventions for customers within their first 12 months, particularly customers in the 7–12 month tenure group.
+Prioritize proactive engagement and retention activities for customers within their first 12 months, particularly customers in the 7–12 month tenure group where the observed churn rate is highest.
 
-### 2. Review high-risk subscription segments
+Potential actions include:
+
+* Structured onboarding programmes
+* Proactive customer check-ins
+* Targeted retention campaigns
+* Early identification of disengaged customers
+
+### 2. Review Higher-Risk Subscription Segments
 
 Investigate the customer experience and value proposition for monthly and quarterly subscribers and test targeted retention interventions.
 
-## Methodology
+The observed difference in churn between customers who received retention offers and those who did not also provides a useful hypothesis for further testing.
 
-Customers were grouped according to subscription type, tenure, complaints, monthly charges, and retention-offer status. Churn rate was calculated as the number of churned customers divided by the total number of customers in each segment.
+---
 
-The analysis was then used to identify the strongest observed patterns and develop recommendations.
+## 🧮 Methodology
 
+Customers were grouped according to subscription type, tenure, complaints, monthly charges, and retention-offer status. 
+Churn rate was calculated as the number of churned customers divided by the total number of customers in each segment.
+For each segment, churn rate was calculated as:
+
+Churn Rate = Churned Customers / Total Customers in Segment
+
+Segment-level churn rates were then compared with the overall churn rate to identify the strongest observed differences. 
+
+These findings were used to develop the recommendations while accounting for the small sample size and the inability to infer causation from the available data.
+
+---
 ## Limitation
 
 The dataset contains only **10 customers**, so the findings should be treated as directional and should be validated using a larger customer population before making broader business decisions.
+There is also a strong relationship between tenure and subscription type in this sample. The observed subscription groups correspond closely with the tenure groups, making it difficult to determine the independent effect of each factor.
 
+In addition, observed associations should not be interpreted as proof of causation.
+
+---
 ## Tools
 
 * Microsoft Excel
 * Pivot Tables
 * Excel Charts
 * Data Analysis
+
+---
+## 📁 Workbook Structure
+
+The Excel workbook contains the following main sections:
+
+| Sheet                     | Description                                                  |
+| ------------------------- | ------------------------------------------------------------ |
+| `Dashboard`               | Executive summary of the churn analysis                      |
+| `Analysis`                | Detailed exploratory analysis, findings, and recommendations |
+| `Pivott`                  | Supporting calculations and summarized analysis              |
+| `churn_dataset`           | Source customer-level dataset                                |
+| `churn_subscription type` | Subscription-type churn analysis                             |
+| `Churn_tenure`            | Tenure-based churn analysis                                  |
+| `churn_complaints`        | Complaint-based churn analysis                               |
+
+---
+
+## 📌 Conclusion
+
+The analysis identified **tenure and subscription type as the two strongest observed factors associated with churn in the sample**, while retention-offer status showed an additional notable association.
+
+The findings suggest that retention efforts should pay particular attention to **early-tenure customers and higher-risk subscription segments**, while further analysis using a larger customer population would be required to validate these patterns.
+
+---
+
+## 📂 Project File
+
+**Customer_Churn_Analysis.xlsx** — Complete Excel workbook containing the analysis, supporting calculations, charts, and dashboard.
