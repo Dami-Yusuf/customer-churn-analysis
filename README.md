@@ -18,6 +18,15 @@ The analysis was designed to answer the following questions:
 4. What methodology was used to arrive at the findings?
 
 ---
+## 📊 Dashboard Preview
+
+The dashboard provides an executive summary of the customer churn analysis, highlighting the overall churn rate, key churn patterns across subscription type and tenure, retention-offer performance, and recommended actions.
+
+<p align="center">
+  <img src="images/dashboard.png" alt="Customer Churn Analysis Dashboard" width="900">
+</p>
+
+---
 
 ## 📊 Dataset
 
