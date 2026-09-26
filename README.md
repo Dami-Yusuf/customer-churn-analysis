@@ -94,7 +94,7 @@ Segment-level churn rates were then compared with the overall churn rate to iden
 These findings were used to develop the recommendations while accounting for the small sample size and the inability to infer causation from the available data.
 
 ---
-## Limitation
+## ⚠️ Limitations
 
 The dataset contains only **10 customers**, so the findings should be treated as directional and should be validated using a larger customer population before making broader business decisions.
 There is also a strong relationship between tenure and subscription type in this sample. The observed subscription groups correspond closely with the tenure groups, making it difficult to determine the independent effect of each factor.
@@ -102,7 +102,7 @@ There is also a strong relationship between tenure and subscription type in this
 In addition, observed associations should not be interpreted as proof of causation.
 
 ---
-## Tools
+## 🛠️ Tools Used
 
 * Microsoft Excel
 * Pivot Tables
