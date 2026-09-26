@@ -23,7 +23,7 @@ The analysis was designed to answer the following questions:
 The dashboard provides an executive summary of the customer churn analysis, highlighting the overall churn rate, key churn patterns across subscription type and tenure, retention-offer performance, and recommended actions.
 
 <p align="center">
-  <img src="images/dashboard.png" alt="Customer Churn Analysis Dashboard" width="900">
+  <img src="https://github.com/Dami-Yusuf/customer-churn-analysis/blob/main/Customer_Churn_Analysis_Dashboard.png" alt="Customer Churn Analysis Dashboard" width="900">
 </p>
 
 ---
