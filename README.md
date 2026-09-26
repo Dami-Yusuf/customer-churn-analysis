@@ -36,6 +36,7 @@ Churn rates were calculated for each segment and compared with the overall churn
 * Customers with **7–12 months of tenure** recorded a **100% observed churn rate**.
 * **Quarterly subscribers** recorded a **100% observed churn rate**.
 * Customers who received a retention offer recorded **0% observed churn**, compared with **71.4%** among customers who did not receive an offer.
+* Churn Rate by **SubscriptionType and TenureGroup** are the top 2 factors contributing to customer churn.
 * Complaint count and monthly charges did not show a consistent relationship with churn in this sample.
 
 ## Recommendations
